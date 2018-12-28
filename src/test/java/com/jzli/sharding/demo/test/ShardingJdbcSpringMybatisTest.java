@@ -63,7 +63,7 @@ public class ShardingJdbcSpringMybatisTest {
 
     @Test
     public void testSQLIN() {
-        List<User> users = userService.findByUserIds(Arrays.asList(1));
+        List<User> users = userService.findByUserIds(Arrays.asList(11));
         if (null != users && !users.isEmpty()) {
             for (User u : users) {
                 System.out.println(u);
